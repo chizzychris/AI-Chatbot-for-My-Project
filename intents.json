@@ -21,7 +21,7 @@
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
-        "See you later, thanks for visiting",
+        "Alright, See you later.",
         "Have a nice day",
         "Bye! Come back again soon."
       ]
