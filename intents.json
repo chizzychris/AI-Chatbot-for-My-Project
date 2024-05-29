@@ -1,0 +1,114 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+          {
+            "tag": "submit_complaint",
+            "patterns": [
+              "I want to submit a complaint",
+              "I need to report an issue",
+              "How do I file a complaint?",
+              "Can I lodge a complaint?",
+              "I have a problem to report"
+            ],
+            "responses": [
+              "Please provide the details of your complaint.",
+              "Sure, what issue are you facing?",
+              "Please describe the problem you are experiencing.",
+              "What is the nature of your complaint?"
+            ]
+          },
+          {
+            "tag": "track_complaint_status",
+            "patterns": [
+              "What is the status of my complaint?",
+              "Can I check my complaint status?",
+              "How is my complaint progressing?",
+              "Is there an update on my complaint?",
+              "Track my complaint"
+            ],
+            "responses": [
+              "Please provide your complaint ID to check the status.",
+              "Sure, can you give me your complaint ID?",
+              "I can help with that. What is your complaint ID?",
+              "Let's track your complaint. May I have the complaint ID?"
+            ]
+          },
+          {
+            "tag": "complaint_categories",
+            "patterns": [
+              "What types of complaints can I make?",
+              "What are the categories of complaints?",
+              "Can I file an academic complaint?",
+              "Do you handle non-academic issues?",
+              "What kinds of issues can I report?"
+            ],
+            "responses": [
+              "You can submit both academic and non-academic complaints.",
+              "We handle various types of complaints, including academic and non-academic issues.",
+              "Yes, you can file complaints about academic and non-academic matters.",
+              "Our system supports complaints related to both academic and non-academic issues."
+            ]
+          },
+          {
+            "tag": "general_inquiry",
+            "patterns": [
+              "How does this system work?",
+              "Tell me about this platform",
+              "What is this system for?",
+              "How can I use this service?",
+              "What does this complaint system do?"
+            ],
+            "responses": [
+              "This system allows students to submit and track their complaints regarding academic and non-academic issues.",
+              "You can use this platform to file complaints and get them resolved either automatically or by university staff.",
+              "This is an intelligent complaint resolution system for handling student complaints efficiently.",
+              "Our system helps you report issues and track the resolution process seamlessly."
+            ]
+          },
+          {
+            "tag": "funny",
+            "patterns": [
+              "Tell me a joke!",
+              "Can you tell me something funny?",
+              "Do you know a joke?",
+              "Make me laugh"
+            ],
+            "responses": [
+              "Why don't scientists trust atoms? Because they make up everything.",
+              "Why did the math book look sad? Because it had too many problems.",
+              "I told my computer I needed a break, and now it won't stop sending me KitKats."
+            ]
+          }
+        ]
+      }
+
