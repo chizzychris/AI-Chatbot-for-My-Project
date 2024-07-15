@@ -8,4 +8,6 @@ app = Flask(__name__)
 def index_get():
     return render_template("base.html")
 
-@app.post("/")
+@app.post("/predict")
+def something():
+    return "Hey"
