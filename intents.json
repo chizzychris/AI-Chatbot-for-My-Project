@@ -5,7 +5,6 @@
       "patterns": [
         "Hi",
         "Hey",
-        "How are you",
         "Is anyone there?",
         "Hello",
         "Good day"
@@ -15,6 +14,35 @@
         "Hello, thanks for visiting",
         "Hi there, what can I do for you?",
         "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "welfare",
+      "patterns": [
+        "How are you",
+        "How you dey?",
+        "Are you alright?",
+        "Hope you are well?"
+      ],
+      "responses": [
+        "I'm okay, How are you?",
+        "Great, What about you? :)",
+        "I am fine, I hope you are too."
+
+      ]
+    },
+    {
+      "tag": "response_to_welfare",
+      "patterns": [
+       "I am okay",
+       "I dey",
+       "I'm good",
+       "We thank God"
+      ],
+      "responses": [
+       "Happy to hear that, What can I do for you today?",
+       "Glad to hear, How may I assist you today"
+
       ]
     },
     {
@@ -31,22 +59,59 @@
       "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
-          {
-            "tag": "submit_complaint",
-            "patterns": [
-              "I want to submit a complaint",
-              "I need to report an issue",
-              "How do I file a complaint?",
-              "Can I lodge a complaint?",
-              "I have a problem to report"
-            ],
-            "responses": [
-              "Please provide the details of your complaint.",
-              "Sure, what issue are you facing?",
-              "Please describe the problem you are experiencing.",
-              "What is the nature of your complaint?"
-            ]
-          },
+
+    {
+      "tag": "submit_complaint",
+      "patterns": [
+        "I want to submit a complaint",
+        "I need to report an issue",
+        "I want to file an issue",
+        "I have a problem",
+        "Wahala wa",
+        "Akwai Masala",
+        "How do I file a complaint?",
+        "Can I lodge a complaint?",
+        "I have a problem to report"
+      ],
+      "responses": [
+        "Would you like to lodge an anonymous complaint or provide your matriculation number for better results and tracking?",
+        "Do you prefer to submit the complaint anonymously or with your matriculation number?"
+      ]
+    },
+    {
+      "tag": "anonymous_complaint",
+      "patterns": [
+        "I want to lodge an anonymous complaint",
+        "Anonymous complaint",
+        "Submit anonymously",
+        "Anonymous"
+      ],
+      "responses": [
+        "Sure, please describe the issue you're facing."
+      ]
+    },
+    {
+      "tag": "matriculated_complaint",
+      "patterns": [
+        "I want to lodge a complaint with my matriculation number",
+        "Matriculation number complaint",
+        "Submit with matriculation number",
+        "Matric Number"
+      ],
+      "responses": [
+        "Please provide your matriculation number."
+      ]
+    },
+    {
+      "tag": "collect_matriculation_number",
+      "patterns": [
+        "My matriculation number is *"
+      ],
+      "responses": [
+        "Hello {matriculation_number}, what issue are you facing?"
+      ]
+    },
+        
           {
             "tag": "track_complaint_status",
             "patterns": [
