@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import random
 import json
@@ -9,7 +10,14 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
-with open('intents.json', 'r') as f:
+# Get the current directory of the script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the absolute path to the intents.json file
+intents_path = os.path.join(script_dir, '../public/intents.json')
+
+# Now use the absolute path to open the file
+with open(intents_path, 'r') as f:
     intents = json.load(f)
 
 all_words = []
